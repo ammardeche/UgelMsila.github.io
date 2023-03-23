@@ -1,22 +1,71 @@
-async function postData(url = "http://ammar-faculty.babylontech.net/SendMail", data = {}) {
-  // Default options are marked with *
-  const response = await fetch(url, {
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    mode: "no-cors", // no-cors, *cors, same-origin
-    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: "omit", // include, *same-origin, omit
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-    body: JSON.stringify(data), // body data type must match "Content-Type" header
-  });
-  return response.json(); // parses JSON response into native JavaScript objects
-}
+let loginForm = document.getElementById("contact-form");
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-postData("http://ammar-faculty.babylontech.net/SendMail", { answer: 42 }).then((data) => {
-  console.log(data); // JSON data parsed by data.json() call
+  // First name
+  let firstName = document.getElementById("firstName");
+  if (firstName.value == "") {
+    alert("Please enter your first name");
+  }
+
+  // Last name
+  let lastName = document.getElementById("lastName");
+  if (lastName.value == "") {
+    alert("Please enter your last name");
+  }
+
+  // Email
+  let email = document.getElementById("email");
+  if (email.value == "") {
+    alert("Please enter your email");
+  }
+
+  let faculty = document.getElementById("faculty");
+
+  // message
+  let message = document.getElementById("message");
+  if (message.value == "") {
+    alert("Please enter a message");
+  }
+
+  // handle submit
+  if (
+    firstName.value != "" &&
+    lastName.value != "" &&
+    email.value != "" &&
+    message.value != ""
+  ) {
+    // Send request
+    let data = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      faculty: faculty.options[faculty.selectedIndex].text,
+      message: message.value,
+    };
+
+    fetch("http://ammar-faculty.babylontech.net/SendMail", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("We have received your message, thank you!");
+          // Clear form
+          firstName.value = "";
+          lastName.value = "";
+          email.value = "";
+          faculty.value = "";
+          message.value = "";
+        } else {
+          alert("Message failed to send");
+        }
+      })
+      .catch((error) => {
+        alert("Message failed to send");
+      });
+  }
 });

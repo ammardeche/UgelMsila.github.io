@@ -1,618 +1,597 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/enigma.css" />
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="/imgs/ugelLogo.png" />
-    <!-- font Awesom -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Font Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,700&family=Cairo:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@200;300&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans:wght@700&family=Roboto:wght@300;400;500;700;900&family=Sofia+Sans+Semi+Condensed:wght@400;500;600&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="script.js"></script>
-    <title>UGEL 28</title>
-  </head>
-  <body>
-    <!-- start main header  -->
-    <header>
-      <div class="container sm py-2">
-        <div
-          class="logo d-flex align-items-center justify-content-center gap-2"
-        >
-          <img src="/imgs/ugelLogo.png" class="ugel-logo" alt="" />
-          <h1 class="fw-bold">
-            الاتحــــاد العــام الطلابي الحــر فرع - المسيــــلة -
-          </h1>
-        </div>
-      </div>
-    </header>
-    <!-- end main header -->
-    <!-- start second header  -->
-    <div class="second-header shadow-sm">
-      <div class="container position-sticky">
-        <div
-          class="navbar d-flex align-items-center justify-content-center py-3 gap-3"
-        >
-          <a class="active" href="#home">
-            <span class=""><i class="fa-solid fa-house"></i></span>
-            الرئيسية</a
-          >
-          <a href="#second">أهدافنا</a>
-          <a href="#activities"> النشاطات</a>
-          <a href="#struct">الهيكلة</a>
-          <a href="#def">التعريف بلاتحاد</a>
-          <a href="#members">الأعضاء </a>
-          <a href="#contact">تواصل معنا</a>
-        </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/enigma.css" />
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous" />
+  <link rel="icon" href="/imgs/ugelLogo.png" />
+  <!-- font Awesom -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,700&family=Cairo:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Nunito:wght@200;300&family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans:wght@700&family=Roboto:wght@300;400;500;700;900&family=Sofia+Sans+Semi+Condensed:wght@400;500;600&family=Work+Sans:wght@200;300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <script defer src="script.js"></script>
+  <title>UGEL 28</title>
+</head>
+
+<body>
+  <!-- start main header  -->
+  <header>
+    <div class="container sm py-2">
       <div
-        class="mob-menu py-3 px-4 position-sticky top-0 w-100 z-1 d-flex justify-content-between"
-      >
-        <div class="dropdown-center">
-          <button
-            class="btn brn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            قائمــة
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#home">الرئيسية</a></li>
-            <li><a class="dropdown-item" href="#second">اهدافنا</a></li>
-            <li><a class="dropdown-item" href="#activities"> النشاطات</a></li>
-            <li><a class="dropdown-item" href="#struct"> الهيكلة</a></li>
-            <li>
-              <a class="dropdown-item" href="#def">التعريف بلاتحاد </a>
-            </li>
-            <li><a class="dropdown-item" href="#members"> الاعضاء</a></li>
-            <li><a class="dropdown-item" href="#contact"> تواصل معــنا</a></li>
-          </ul>
+        class="logo d-flex align-items-center justify-content-center gap-2">
+        <img src="/imgs/ugelLogo.png" class="ugel-logo" alt="" />
+        <h1 class="fw-bold">
+          الاتحــــاد العــام الطلابي الحــر فرع - المسيــــلة -
+        </h1>
+      </div>
+    </div>
+  </header>
+  <!-- end main header -->
+  <!-- start second header  -->
+  <div class="second-header shadow-sm">
+    <div class="container position-sticky">
+      <div
+        class="navbar d-flex align-items-center justify-content-center py-3 gap-3">
+        <a class="active" href="#home">
+          <span class=""><i class="fa-solid fa-house"></i></span>
+          الرئيسية</a>
+        <a href="#second">أهدافنا</a>
+        <a href="#activities"> النشاطات</a>
+        <a href="#struct">الهيكلة</a>
+        <a href="#def">التعريف بلاتحاد</a>
+        <a href="#members">الأعضاء </a>
+        <a href="#contact">تواصل معنا</a>
+      </div>
+    </div>
+    <div
+      class="mob-menu py-3 px-4 position-sticky top-0 w-100 z-1 d-flex justify-content-between">
+      <div class="dropdown-center">
+        <button
+          class="btn brn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+          قائمــة
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#home">الرئيسية</a></li>
+          <li><a class="dropdown-item" href="#second">اهدافنا</a></li>
+          <li><a class="dropdown-item" href="#activities"> النشاطات</a></li>
+          <li><a class="dropdown-item" href="#struct"> الهيكلة</a></li>
+          <li>
+            <a class="dropdown-item" href="#def">التعريف بلاتحاد </a>
+          </li>
+          <li><a class="dropdown-item" href="#members"> الاعضاء</a></li>
+          <li><a class="dropdown-item" href="#contact"> تواصل معــنا</a></li>
+        </ul>
+      </div>
+      <div class="logo d-flex align-items-center justify-content-end gap-2">
+        <h1>UGEL 28</h1>
+        <img src="/imgs/ugelLogo.png" class="ugel-logo" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- end second header  -->
+
+  <!-- start main section -->
+  <section
+    class="main-section position-relative py-lg-5 d-flex align-items-center"
+    id="home">
+    <div class="container">
+      <div
+        class="content pt-lg-4 position-relative pb-lg-5 d-flex align-items-center justify-content-between">
+        <div class="image">
+          <img src="/imgs/undraw_Books_re_8gea-removebg-preview.png" alt="" />
         </div>
-        <div class="logo d-flex align-items-center justify-content-end gap-2">
-          <h1>UGEL 28</h1>
-          <img src="/imgs/ugelLogo.png" class="ugel-logo" alt="" />
+        <div class="information position-relative">
+          <h2 class="position-relative pb-2">
+            <span style="color: green">مرحبــا</span> بــك
+          </h2>
+          <p class="pt-3 fw-medium">
+            من خلال زيارتك للموقع يمكنك الاطلاع على مختلف المعلومات والاهداف
+            التي نسعى وراءها وكذلك الاطلاع على مختلف النشاطات التي نقدمها
+            ونقوم بها
+          </p>
+          <p></p>
         </div>
       </div>
     </div>
-    <!-- end second header  -->
+    <div id="" class="arrow pt-lg-4">
+      <a class="fs-1" href="#second"><i class="fa-solid fa-circle-chevron-down"></i></a>
+    </div>
+  </section>
+  <!-- end main section -->
 
-    <!-- start main section -->
-    <section
-      class="main-section position-relative py-lg-5 d-flex align-items-center"
-      id="home"
-    >
-      <div class="container">
-        <div
-          class="content pt-lg-4 position-relative pb-lg-5 d-flex align-items-center justify-content-between"
-        >
-          <div class="image">
-            <img src="/imgs/undraw_Books_re_8gea-removebg-preview.png" alt="" />
-          </div>
-          <div class="information position-relative">
-            <h2 class="position-relative pb-2">
-              <span style="color: green">مرحبــا</span> بــك
-            </h2>
-            <p class="pt-3 fw-medium">
-              من خلال زيارتك للموقع يمكنك الاطلاع على مختلف المعلومات والاهداف
-              التي نسعى وراءها وكذلك الاطلاع على مختلف النشاطات التي نقدمها
-              ونقوم بها
-            </p>
-            <p></p>
-          </div>
-        </div>
+  <!-- second section -->
+  <section class="second-section" id="second">
+    <h2 class="text-center mb-3 m-auto pb-3">
+      <span style="color: green">اهــدا</span>فنا
+    </h2>
+
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="/imgs/goals.png" alt="" />
+
+      <div class="info fw-medium">
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i> توحيد صفوف الطلبة
+          وتجميعهم من اجل تجسيد مشروع الوحدة الوطنية
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i> الدفاع عن حقوق الطلبة
+          المادية المعنوية
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i> المساهمة في رفع مستوى
+          العلمي والثقافي والفكري لطلبة
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i> تطوير الحركة الطلابية
+          للمحافضة على مكتسباتها والمساهمة في دفع الحركة الشبانية
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i> التعاون بين الطلبة
+          الجزائريين في الداخل والخارج ضمن اطر محدودة وتمتين العلاقات مع
+          المنضمات في العالم
+        </p>
       </div>
-      <div id="" class="arrow pt-lg-4">
-        <a class="fs-1" href="#second"
-          ><i class="fa-solid fa-circle-chevron-down"></i
-        ></a>
-      </div>
-    </section>
-    <!-- end main section -->
-
-    <!-- second section -->
-    <section class="second-section" id="second">
-      <h2 class="text-center mb-3 m-auto pb-3">
-        <span style="color: green">اهــدا</span>فنا
-      </h2>
-
-      <div class="container d-flex align-items-center justify-content-between">
-        <img src="/imgs/goals.png" alt="" />
-
-        <div class="info fw-medium">
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i> توحيد صفوف الطلبة
-            وتجميعهم من اجل تجسيد مشروع الوحدة الوطنية
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i> الدفاع عن حقوق الطلبة
-            المادية المعنوية
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i> المساهمة في رفع مستوى
-            العلمي والثقافي والفكري لطلبة
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i> تطوير الحركة الطلابية
-            للمحافضة على مكتسباتها والمساهمة في دفع الحركة الشبانية
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i> التعاون بين الطلبة
-            الجزائريين في الداخل والخارج ضمن اطر محدودة وتمتين العلاقات مع
-            المنضمات في العالم
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- second section -->
-    <!-- activities  -->
-    <section class="active-section" id="activities">
-      <h2 class="text-center mb-3 m-auto pb-3">
-        <span style="color: green">النشا</span>طــات
-      </h2>
-      <div class="container d-flex align-items-center justify-content-around">
-        <div class="info">
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            اقامة المعارض وعقد الملتقيات و الندوات والمحاضرات المختلفة
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            عقد جمعيات عامة
-          </p>
-
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            تنضيم رحلات ومخبمات والوافل
-          </p>
-
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            نشر بحوث وكتيبــات
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            اقامــة التضاهرات الثقافية والأيام الاعلامية
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            الدورات والمهرجانات الرياضية
-          </p>
-        </div>
-        <img class="mb-4" src="/imgs/activities.png" alt="" />
-      </div>
-    </section>
-    <!-- activities  -->
-
-    <!-- structuring -->
-    <section class="struct-section" id="struct">
-      <h2 class="text-center mb-3 m-auto pb-3">
-        <span style="color: green">الهيكــ</span>لة
-      </h2>
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>1- المؤتمر الوطني</h3>
-                <p>
-                  اعلى هيئة في الاتحاد وينعقد كل ثلاث سنوات, كما ينعقد استثنائيا
-                  بدعوة من المجلس الوطني . يتشكل المؤتمر من : المجلس الوطني,
-                  مكاتب الأقاليم, مكاتب الفروع . نسبة من مكاتب الشعب و الثانويين
-                  و اللجان الوطنية الدائمة وكدا الفروع بالخارج يحددها المجلس
-                  الوطني. نسبة يحددها المكتب التنفيذي | الوطني واللجنة التحضيرية
-                  للمؤتمر بموافقة المجلس الوطني. يقوم المؤتمر الوطني بالمصادقة
-                  على مكتب المؤتمر و اللائحة الانتخابية للمؤتمر, مناقشة و تقييم
-                  نشاطات الاتحاد بناء على التقرير الأدبي والمالي للمنظمة, مناقشة
-                  اللوائح والقوانين و المصادقة عليها و تسطير السياسة العامة,
-                  انتخاب المجلس الوطني و الذي بدوره ينتخب المكتب التنفيذي الوطني
-                  وفق اللائحة الانتخابية المصادق عليها في المؤتمر
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>2- المجلس الوطني</h3>
-                <p>
-                  هو أعلى هيئة في الاتحاد بين المؤتمرين يتولى مهمة التشريع
-                  التوجيه و الرقابة . ينتخب من بين أعضائه الأمين العام ثم رئيس |
-                  المجلس الوطني ثم نائب الأمين العام ثم أعضاء المكتب التنفيذي
-                  الوطني وفق ما تحدده اللائحة الانتخابية للمؤتمر. يتولى المجلس
-                  الوطني : إعادة النظر في التقسيم الإداري للأقاليم و الفروع عند
-                  الضرورة, مناقشة برنامج العمل المسطر و الميزانية التقديرية و
-                  المصادقة عليها . مناقشة التقارير الدورية المعدة من طرف المكتب
-                  التنفيذي الوطني المصادقة على النظام الداخلي للإتحاد . يتشكل
-                  المجلس الوطني من : رؤساء الأقاليم ورؤساء الفروع و رؤساء |
-                  الشعب الولائية بحكم المنصب أعضاء منتخبون و أعضاء مزكون وفق ما
-                  تحدده اللائحة الانتخابية للمؤتمر, و يمكن تدعيمه وفق ما يحدده
-                  النظام الداخلي . يشكل المجلس الوطني لجنة الانضباط المركزية و
-                  كدا لجنة المراقبة المالية وفق ما يحدده النظام الداخلي
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>3- المكتب التنفيذي الوطني</h3>
-                <p>
-                  المكتب التنفيذي الوطني هو اعلى هيئة تنفيذية في الاتحاد يتشكل
-                  من إحدى عشرة عضوا ينتخبون من طرف المجلس الوطني وفق اللائحة
-                  الانتخابية للمؤتمر. تحدد شروط تولي الأمانة العامة ! نيابتها و
-                  كدا العضوية في المكتب التنفيدي الوطني اللائحة الانتخابية
-                  للمؤتمر. و يتولى المكتب التنفيذي الوطني. لسهر على تنفيذ مقررات
-                  و لوائح المؤتمر الوطني و المجلس الوطني و توصياتهما. توجیه و
-                  تدعيم ومراقبة الهياكل التنفيذية للإتحاد والإشراف على حسن
-                  سيرها. يستشير المكتب التنفيذي الوطني | المجلس الوطني في
-                  المواقف الكبرى و القضايا الأساسية .. يمكن للمكتب التنفيذي
-                  الوطني | يتخذ إجراءات تأديبية في حق أي هيكل تنفيذي أو عضو وفق
-                  ما يحدده النظام الداخلي يوضح النظام الداخلي مهام و صلاحيات
-                  أعضاء المكتب التنفيذي الوطني .. يشكل المكتب التنفيذي الوطني
-                  على المستوى المركزي لجانا مركزية دائمة تساعده في أداء مهامه
-                  وتعمل تحت إشرافه يحدد النظام الداخلي شروط وكيفية تشكيل اللجان
-                  المركزية الدائمة و كدا مهامها وصلاحياتها .
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>4- الاقليم</h3>
-                <p>
-                  هو هيكل تنظيمي يظم مجموعة من المدن الجامعية وفق التقسيم .
-                  الإداري المصادق عليه من طرف المجلس الوطني يتشكل مكتب الإقليم
-                  من رؤساء فروعه و رؤساء شعبه الولائية وفق النظام الداخلي الذي
-                  يحدد مهامه و صلاحياته مع إمكانية تدعيمه بعد - استشارة المكتب
-                  التنفيذي الوطني ينتخب رئيس الإقليم من طرف المكتب التنفيذي
-                  الوطني
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>5- الفــرع</h3>
-                <p>
-                  هو الهيكل التنظيمي للإتحاد في المدينة الجامعية وفق التقسيم
-                  الإداري المصادق عليه في المجلس الوطني يتكون الفرع من شعبتين
-                  على الأقل يتشكل مكتب الفرع من ممثلي مكاتب الشعب المكونة له
-                  ويتراوح عدد أعضائه من 08 إلى 11 عضوا وفق ما يحدده النظام
-                  الداخلي يحدد النظام الداخلي مهام و صلاحيات مكتب الفرع و شروط
-                  العضوية فيه ينتخب رئيس الفرع من طرف مكتب الفرع النظام الداخلي
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h3>6- الشعــبة</h3>
-                <p>
-                  هي الهيكل القاعدي للإتحاد تتشكل على مستوى كل معهد, كلية, قسم
-                  مدرسة عليا, مدرسة وطنية أو إقامة جامعية تمارس مهامها وفق
-                  النظام الداخلي. تتكون الشعبة من : الجمعية العامة مجلس الشعبة
-                  المكتب التنفيذي | للشعبة يوضح النظام الداخلي مهام و صلاحيات
-                  المكتب التنفيذي للشعبة شروط العضوية فيه
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- structuring -->
-
-    <!-- def -->
-    <section class="def-section" id="def">
-      <h2 class="text-center mb-3 m-auto pb-3">
-        <span style="color: green">تعريــ</span>ف
-      </h2>
-      <div class="container d-flex align-items-center justify-content-around">
-        <img class="mt-5 my-5" src="/imgs/ugelLogo.png" alt="" />
-
-        <div class="info">
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            الاتحاد : تعني توحيد الكلمة وتوحيد الصفوف
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            العام : يعمل على المستوى الوطني ويتحرك عبر هيئته الجمهورية والمحلية
-            والقاعدية.
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            الطلابي : تنصب اهتماماته أساسا حول اهتمامات
-          </p>
-          <p>
-            <i class="fa fa-check" aria-hidden="true"></i>
-            الحر : يهدف من ورائه إلى جعل الحرية صفة ممارسة داخل هياكل
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- def -->
-
-    <!-- members -->
-    <section class="members-section" id="members">
-      <h2 class="text-center mb-3 m-auto pb-3">
-        <span style="color: green">الأعضــ</span>اء
-      </h2>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/mahdi.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">بنية محمد مــهدي</h3>
-                  <span class="fw-bold">رئيــس الفرع</span>
-                  <p>
-                    سنة ثانية ماســتر تخصص مالية وبنوك بجامعة محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/abdoallah.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">ميهوبي عبــدلله الأمين</h3>
-                  <span class="fw-bold">مسؤول الشؤون الاجتماعية </span>
-                  <p>
-                    سنة ثانية ليسانس تخصص كهرو تقنــــني بلقطب الجامعي محمد
-                    بوضياف المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/oussama.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">أسامــة دبداب</h3>
-                  <span class="fw-bold">نائب رئيس الفــرع </span>
-                  <p>
-                    سنة اولى ماستـــــر تخصص الكترونــيك القطب الجامعي محمد
-                    بوضياف المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/islam.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">حجاج نصر الله</h3>
-                  <span class="fw-bold">مسؤول الشؤون البيداغوجية </span>
-                  <p>
-                    سنة ثانية ماستـــــر تخصص بيوتكنولوجي القطب الجامعي محمد
-                    بوضياف المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/adel.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">طيبي عادل</h3>
-                  <span class="fw-bold">مسؤول الادارة والتنضيم </span>
-                  <p>
-                    سنة اولى ليسانس تخصص اعلام الي القطب الجامعي محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/atallah.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">عطـاء الله أيوب</h3>
-                  <span class="fw-bold">مسؤول الاعلام والتواصل الاجتماعي </span>
-                  <p>
-                    سنة ثانية ليسانس تخصص مالية ومحسابة جامعة محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/girl.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">بن شلالي نور الهدى زهرة</h3>
-                  <span class="fw-bold"
-                    >مسؤولة النشاطات العلمية , الثقافية والرياضية</span
-                  >
-                  <p>
-                    سنة ثانية ليسانس تخصص بيولوجي القطب الجامعي محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/girl.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">بن قسميــة سارة</h3>
-                  <span class="fw-bold">مسؤولة التكوين والتدريب</span>
-                  <p>
-                    سنة ثالثة ليسانس تخصص علم نفس عبادي جامعة محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-12 col-sm-12">
-            <div class="card-m position-relative">
-              <div class="card-body">
-                <img src="/members/girl.png" alt="" />
-                <div class="information text-center">
-                  <h3 class="mt-3">البل مروة</h3>
-                  <span class="fw-bold">مسؤولة الثانويين</span>
-                  <p>
-                    سنة اولى ماستر تخصص لسانيات عامة أدب عربي جامعة محمد بوضياف
-                    المسيلة
-                  </p>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- members -->
-
-    <!-- contact -->
-    <section class="contact-sec" id="contact">
-      <h2 class="text-center mb-5 m-auto pb-3">
-        <span style="color: green">تواصــل </span>معــنا
-      </h2>
-
-      <div class="container d-flex justify-content-between">
-        <img class="w-100" src="imgs/send.png" alt="" />
-        <form class="form w-100 m-auto p-lg-4 p-sm-5">
-          <p class="py-1 px-3 fw-bold">
-            يمكنك طرح اي مشكلة قد تعاني منها داخل الكلية فقط قم بملأ الفراغات
-            وسنتصل بك لاحقا
-          </p>
-          <div id="error-message"></div>
-          <div>
-            <span>الاسم الاول</span>
-            <input type="text" id="fname" placeholder="ادخل اسمك الاول" />
-          </div>
-
-          <span>الاسم الثاني</span>
-          <input type="text" id="lname" placeholder="ادخل اسمك الثاني" />
-
-          <div>
-            <span>بريدك الالكتروني</span>
-            <input
-              type="email"
-              id="email"
-              placeholder="قم بادخال بريدك الالكتروني"
-            />
-          </div>
-          <div>
-            <span>الكلية</span>
-            <select class="sel" id="fac">
-              <option value="">كلية العلوم والتكنولوجيا</option>
-              <option value="">كلية البيولوجيا</option>
-              <option value="">كلية علوم ميدان المادة</option>
-              <option value="">كلية رياضيات والاعلام الالي</option>
-              <option value="">معهد تسيير التقنيات الحضرية</option>
-              <option value="">كليةالحقوق</option>
-              <option value="">كليةالعلوم الاقتصادية</option>
-              <option value="">كليةالعلوم الانسانية</option>
-              <option value="">كليةالاداب واللغات</option>
-              <option value="">معهد العلوم وتقنيات النشاطات البدنية</option>
-            </select>
-          </div>
-          <div>
-            <span class="mt-3">رسالة</span>
-            <textarea id="message" cols="30" rows="10"> </textarea>
-          </div>
-
-          <button class="w-100 py-1 border-0 fw-bold" type="submit">
-            ارســال
-          </button>
-        </form>
-      </div>
-    </section>
-    <!-- contact -->
-    <!-- footer -->
-    <footer
-      class="footer d-flex align-items-center justify-content-between px-4 py-4"
-    >
-      <div>
-        <span class="fw-bold">UGEL 28</span>
-        <img src="imgs/ugelLogo.png" alt="" />
-      </div>
+    </div>
+  </section>
+  <!-- second section -->
+  <!-- activities  -->
+  <section class="active-section" id="activities">
+    <h2 class="text-center mb-3 m-auto pb-3">
+      <span style="color: green">النشا</span>طــات
+    </h2>
+    <div class="container d-flex align-items-center justify-content-around">
       <div class="info">
-        <span class="fw-bold"
-          >Developed by :
-          <a href="https://www.facebook.com/ammar.de.507">ammar deche</a></span
-        >
-      </div>
-      <div class="social d-flex gap-3">
-        <a
-          href="https://www.instagram.com/ugel_28/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR0FKoS2zkdMw6D40hmm526ZqvEcb3t3y_AIwR3btqkMbWQ1tqY0Hk9Jdy4"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </footer>
-    <!-- footer -->
-    <!-- script -->
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          اقامة المعارض وعقد الملتقيات و الندوات والمحاضرات المختلفة
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          عقد جمعيات عامة
+        </p>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          تنضيم رحلات ومخبمات والوافل
+        </p>
+
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          نشر بحوث وكتيبــات
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          اقامــة التضاهرات الثقافية والأيام الاعلامية
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          الدورات والمهرجانات الرياضية
+        </p>
+      </div>
+      <img class="mb-4" src="/imgs/activities.png" alt="" />
+    </div>
+  </section>
+  <!-- activities  -->
+
+  <!-- structuring -->
+  <section class="struct-section" id="struct">
+    <h2 class="text-center mb-3 m-auto pb-3">
+      <span style="color: green">الهيكــ</span>لة
+    </h2>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>1- المؤتمر الوطني</h3>
+              <p>
+                اعلى هيئة في الاتحاد وينعقد كل ثلاث سنوات, كما ينعقد استثنائيا
+                بدعوة من المجلس الوطني . يتشكل المؤتمر من : المجلس الوطني,
+                مكاتب الأقاليم, مكاتب الفروع . نسبة من مكاتب الشعب و الثانويين
+                و اللجان الوطنية الدائمة وكدا الفروع بالخارج يحددها المجلس
+                الوطني. نسبة يحددها المكتب التنفيذي | الوطني واللجنة التحضيرية
+                للمؤتمر بموافقة المجلس الوطني. يقوم المؤتمر الوطني بالمصادقة
+                على مكتب المؤتمر و اللائحة الانتخابية للمؤتمر, مناقشة و تقييم
+                نشاطات الاتحاد بناء على التقرير الأدبي والمالي للمنظمة, مناقشة
+                اللوائح والقوانين و المصادقة عليها و تسطير السياسة العامة,
+                انتخاب المجلس الوطني و الذي بدوره ينتخب المكتب التنفيذي الوطني
+                وفق اللائحة الانتخابية المصادق عليها في المؤتمر
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>2- المجلس الوطني</h3>
+              <p>
+                هو أعلى هيئة في الاتحاد بين المؤتمرين يتولى مهمة التشريع
+                التوجيه و الرقابة . ينتخب من بين أعضائه الأمين العام ثم رئيس |
+                المجلس الوطني ثم نائب الأمين العام ثم أعضاء المكتب التنفيذي
+                الوطني وفق ما تحدده اللائحة الانتخابية للمؤتمر. يتولى المجلس
+                الوطني : إعادة النظر في التقسيم الإداري للأقاليم و الفروع عند
+                الضرورة, مناقشة برنامج العمل المسطر و الميزانية التقديرية و
+                المصادقة عليها . مناقشة التقارير الدورية المعدة من طرف المكتب
+                التنفيذي الوطني المصادقة على النظام الداخلي للإتحاد . يتشكل
+                المجلس الوطني من : رؤساء الأقاليم ورؤساء الفروع و رؤساء |
+                الشعب الولائية بحكم المنصب أعضاء منتخبون و أعضاء مزكون وفق ما
+                تحدده اللائحة الانتخابية للمؤتمر, و يمكن تدعيمه وفق ما يحدده
+                النظام الداخلي . يشكل المجلس الوطني لجنة الانضباط المركزية و
+                كدا لجنة المراقبة المالية وفق ما يحدده النظام الداخلي
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>3- المكتب التنفيذي الوطني</h3>
+              <p>
+                المكتب التنفيذي الوطني هو اعلى هيئة تنفيذية في الاتحاد يتشكل
+                من إحدى عشرة عضوا ينتخبون من طرف المجلس الوطني وفق اللائحة
+                الانتخابية للمؤتمر. تحدد شروط تولي الأمانة العامة ! نيابتها و
+                كدا العضوية في المكتب التنفيدي الوطني اللائحة الانتخابية
+                للمؤتمر. و يتولى المكتب التنفيذي الوطني. لسهر على تنفيذ مقررات
+                و لوائح المؤتمر الوطني و المجلس الوطني و توصياتهما. توجیه و
+                تدعيم ومراقبة الهياكل التنفيذية للإتحاد والإشراف على حسن
+                سيرها. يستشير المكتب التنفيذي الوطني | المجلس الوطني في
+                المواقف الكبرى و القضايا الأساسية .. يمكن للمكتب التنفيذي
+                الوطني | يتخذ إجراءات تأديبية في حق أي هيكل تنفيذي أو عضو وفق
+                ما يحدده النظام الداخلي يوضح النظام الداخلي مهام و صلاحيات
+                أعضاء المكتب التنفيذي الوطني .. يشكل المكتب التنفيذي الوطني
+                على المستوى المركزي لجانا مركزية دائمة تساعده في أداء مهامه
+                وتعمل تحت إشرافه يحدد النظام الداخلي شروط وكيفية تشكيل اللجان
+                المركزية الدائمة و كدا مهامها وصلاحياتها .
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>4- الاقليم</h3>
+              <p>
+                هو هيكل تنظيمي يظم مجموعة من المدن الجامعية وفق التقسيم .
+                الإداري المصادق عليه من طرف المجلس الوطني يتشكل مكتب الإقليم
+                من رؤساء فروعه و رؤساء شعبه الولائية وفق النظام الداخلي الذي
+                يحدد مهامه و صلاحياته مع إمكانية تدعيمه بعد - استشارة المكتب
+                التنفيذي الوطني ينتخب رئيس الإقليم من طرف المكتب التنفيذي
+                الوطني
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>5- الفــرع</h3>
+              <p>
+                هو الهيكل التنظيمي للإتحاد في المدينة الجامعية وفق التقسيم
+                الإداري المصادق عليه في المجلس الوطني يتكون الفرع من شعبتين
+                على الأقل يتشكل مكتب الفرع من ممثلي مكاتب الشعب المكونة له
+                ويتراوح عدد أعضائه من 08 إلى 11 عضوا وفق ما يحدده النظام
+                الداخلي يحدد النظام الداخلي مهام و صلاحيات مكتب الفرع و شروط
+                العضوية فيه ينتخب رئيس الفرع من طرف مكتب الفرع النظام الداخلي
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h3>6- الشعــبة</h3>
+              <p>
+                هي الهيكل القاعدي للإتحاد تتشكل على مستوى كل معهد, كلية, قسم
+                مدرسة عليا, مدرسة وطنية أو إقامة جامعية تمارس مهامها وفق
+                النظام الداخلي. تتكون الشعبة من : الجمعية العامة مجلس الشعبة
+                المكتب التنفيذي | للشعبة يوضح النظام الداخلي مهام و صلاحيات
+                المكتب التنفيذي للشعبة شروط العضوية فيه
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- structuring -->
+
+  <!-- def -->
+  <section class="def-section" id="def">
+    <h2 class="text-center mb-3 m-auto pb-3">
+      <span style="color: green">تعريــ</span>ف
+    </h2>
+    <div class="container d-flex align-items-center justify-content-around">
+      <img class="mt-5 my-5" src="/imgs/ugelLogo.png" alt="" />
+
+      <div class="info">
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          الاتحاد : تعني توحيد الكلمة وتوحيد الصفوف
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          العام : يعمل على المستوى الوطني ويتحرك عبر هيئته الجمهورية والمحلية
+          والقاعدية.
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          الطلابي : تنصب اهتماماته أساسا حول اهتمامات
+        </p>
+        <p>
+          <i class="fa fa-check" aria-hidden="true"></i>
+          الحر : يهدف من ورائه إلى جعل الحرية صفة ممارسة داخل هياكل
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- def -->
+
+  <!-- members -->
+  <section class="members-section" id="members">
+    <h2 class="text-center mb-3 m-auto pb-3">
+      <span style="color: green">الأعضــ</span>اء
+    </h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/mahdi.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">بنية محمد مــهدي</h3>
+                <span class="fw-bold">رئيــس الفرع</span>
+                <p>
+                  سنة ثانية ماســتر تخصص مالية وبنوك بجامعة محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/abdoallah.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">ميهوبي عبــدلله الأمين</h3>
+                <span class="fw-bold">مسؤول الشؤون الاجتماعية </span>
+                <p>
+                  سنة ثانية ليسانس تخصص كهرو تقنــــني بلقطب الجامعي محمد
+                  بوضياف المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/oussama.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">أسامــة دبداب</h3>
+                <span class="fw-bold">نائب رئيس الفــرع </span>
+                <p>
+                  سنة اولى ماستـــــر تخصص الكترونــيك القطب الجامعي محمد
+                  بوضياف المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/islam.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">حجاج نصر الله</h3>
+                <span class="fw-bold">مسؤول الشؤون البيداغوجية </span>
+                <p>
+                  سنة ثانية ماستـــــر تخصص بيوتكنولوجي القطب الجامعي محمد
+                  بوضياف المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/adel.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">طيبي عادل</h3>
+                <span class="fw-bold">مسؤول الادارة والتنضيم </span>
+                <p>
+                  سنة اولى ليسانس تخصص اعلام الي القطب الجامعي محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/atallah.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">عطـاء الله أيوب</h3>
+                <span class="fw-bold">مسؤول الاعلام والتواصل الاجتماعي </span>
+                <p>
+                  سنة ثانية ليسانس تخصص مالية ومحسابة جامعة محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/girl.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">بن شلالي نور الهدى زهرة</h3>
+                <span class="fw-bold">مسؤولة النشاطات العلمية , الثقافية والرياضية</span>
+                <p>
+                  سنة ثانية ليسانس تخصص بيولوجي القطب الجامعي محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/girl.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">بن قسميــة سارة</h3>
+                <span class="fw-bold">مسؤولة التكوين والتدريب</span>
+                <p>
+                  سنة ثالثة ليسانس تخصص علم نفس عبادي جامعة محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+          <div class="card-m position-relative">
+            <div class="card-body">
+              <img src="/members/girl.png" alt="" />
+              <div class="information text-center">
+                <h3 class="mt-3">البل مروة</h3>
+                <span class="fw-bold">مسؤولة الثانويين</span>
+                <p>
+                  سنة اولى ماستر تخصص لسانيات عامة أدب عربي جامعة محمد بوضياف
+                  المسيلة
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- members -->
+
+  <!-- contact -->
+  <section class="contact-sec" id="contact">
+    <h2 class="text-center mb-5 m-auto pb-3">
+      <span style="color: green">تواصــل </span>معــنا
+    </h2>
+
+    <div class="container d-flex justify-content-between">
+      <img class="w-100" src="imgs/send.png" alt="" />
+      <form id="contact-form" class="form w-100 m-auto p-lg-4 p-sm-5">
+        <p class="py-1 px-3 fw-bold">
+          يمكنك طرح اي مشكلة قد تعاني منها داخل الكلية فقط قم بملأ الفراغات
+          وسنتصل بك لاحقا
+        </p>
+        <div id="error-message"></div>
+        <div>
+          <span>الاسم الاول</span>
+          <input type="text" id="firstName" name="firstName" placeholder="ادخل اسمك الاول" />
+        </div>
+
+        <span>الاسم الثاني</span>
+        <input type="text" id="lastName" name="lastName" placeholder="ادخل اسمك الثاني" />
+
+        <div>
+          <span>بريدك الالكتروني</span>
+          <input type="email" id="email" name="email" placeholder="قم بادخال بريدك الالكتروني" />
+        </div>
+        <div>
+          <span>الكلية</span>
+          <select class="sel" id="faculty" name="faculty">
+            <option value="">كلية العلوم والتكنولوجيا</option>
+            <option value="">كلية البيولوجيا</option>
+            <option value="">كلية علوم ميدان المادة</option>
+            <option value="">كلية رياضيات والاعلام الالي</option>
+            <option value="">معهد تسيير التقنيات الحضرية</option>
+            <option value="">كليةالحقوق</option>
+            <option value="">كليةالعلوم الاقتصادية</option>
+            <option value="">كليةالعلوم الانسانية</option>
+            <option value="">كليةالاداب واللغات</option>
+            <option value="">معهد العلوم وتقنيات النشاطات البدنية</option>
+          </select>
+        </div>
+        <div>
+          <span class="mt-3">رسالة</span>
+          <textarea id="message" name="message" cols="30" rows="10"> </textarea>
+        </div>
+
+        <button class="w-100 py-1 border-0 fw-bold" type="submit">
+          ارســال
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- contact -->
+  <!-- footer -->
+  <footer
+    class="footer d-flex align-items-center justify-content-between px-4 py-4">
+    <div>
+      <span class="fw-bold">UGEL 28</span>
+      <img src="imgs/ugelLogo.png" alt="" />
+    </div>
+    <div class="info">
+      <span class="fw-bold">Developed by :
+        <a href="https://www.facebook.com/ammar.de.507">ammar deche</a></span>
+    </div>
+    <div class="social d-flex gap-3">
+      <a
+        href="https://www.instagram.com/ugel_28/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR0FKoS2zkdMw6D40hmm526ZqvEcb3t3y_AIwR3btqkMbWQ1tqY0Hk9Jdy4"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+  <!-- footer -->
+  <!-- script -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
