@@ -5,19 +5,19 @@ loginForm.addEventListener("submit", (e) => {
   // First name
   let firstName = document.getElementById("firstName");
   if (firstName.value == "") {
-    alert("Please enter your first name");
+    alert("من فضلك فم بادخال الاسم الاول");
   }
 
   // Last name
   let lastName = document.getElementById("lastName");
   if (lastName.value == "") {
-    alert("Please enter your last name");
+    alert("من فضلك قم بادخال الاسم الثاني");
   }
 
   // Email
   let email = document.getElementById("email");
   if (email.value == "") {
-    alert("Please enter your email");
+    alert("من فضلك قم بادخال بريدك الالكتروني");
   }
 
   let faculty = document.getElementById("faculty");
@@ -53,7 +53,7 @@ loginForm.addEventListener("submit", (e) => {
     })
       .then((response) => {
         if (response.ok) {
-          alert("We have received your message, thank you!");
+          alert("! لقد تم ارسال المعلومات بنجاح سنتصل بك في اقرب وقت");
           // Clear form
           firstName.value = "";
           lastName.value = "";
@@ -61,11 +61,11 @@ loginForm.addEventListener("submit", (e) => {
           faculty.value = "";
           message.value = "";
         } else {
-          alert("Message failed to send");
+          alert("حدث خطأ يرجي اعادة المحاولة");
         }
       })
       .catch((error) => {
-        alert("Message failed to send");
+        alert("حدث خطأ يرجي اعادة المحاولة");
       });
   }
 });

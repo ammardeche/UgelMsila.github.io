@@ -100,7 +100,7 @@ header {
   width: 40px;
 }
 .logo h1 {
-  font-size: 14px;
+  font-size: 13px;
 }
 /* end header */
 
@@ -473,7 +473,8 @@ footer i {
   font-weight: 500;
 }
 .contact-sec form input,
-.contact-sec form textarea {
+.contact-sec form textarea,
+.contact-sec select {
   width: 100%;
   margin-bottom: 1rem;
   outline: none;
@@ -482,14 +483,16 @@ footer i {
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
-}
-.contact-sec form input:focus,
-.contact-sec form textarea:focus {
+  background-color: #eee;
+  border: none;
+  border-bottom: 1px solid green;
+  padding: 0.5rem;
 }
 .contact-sec form span {
   display: block;
   margin-bottom: 0.5rem;
 }
+
 button {
   background-color: #00bfa6;
   color: white;
